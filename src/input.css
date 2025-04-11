@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-line {
+    @apply block w-6 h-0.5 my-1 bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply  -rotate-45 mt-2;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply opacity-0;
+}
